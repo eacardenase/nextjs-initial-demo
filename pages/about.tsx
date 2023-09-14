@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 import styles from '@/styles/Home.module.css';
+import NavBar from '@/components/NavBar';
 
 export default function AboutPage() {
   return (
@@ -11,10 +13,13 @@ export default function AboutPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <NavBar />
+
       <main className={styles.main}>
+        <h1>About Page</h1>
         <h1>
-          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-          Ir a <a href="/">Home</a>
+          Ir a <Link href="/">Home</Link>
         </h1>
         <div className={styles.description}>
           <p>
