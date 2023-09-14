@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-import MainLayout from '@/components/layouts/MainLayout';
+import { MainLayout } from '@/components/layouts/MainLayout';
 
-export default function ContactPage() {
+export const ContactPage = () => {
   return (
     <MainLayout>
-      <h1 className="title">Contact Page</h1>
-      <h1>
+      <h1>Contact Page</h1>
+      <h1 className="title">
         Ir a <Link href="/">Home</Link>
       </h1>
       <p className="description">
@@ -14,4 +14,6 @@ export default function ContactPage() {
       </p>
     </MainLayout>
   );
-}
+};
+
+export default ContactPage;

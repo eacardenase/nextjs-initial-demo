@@ -1,13 +1,13 @@
 import Head from 'next/head';
 
 import styles from '@/components/layouts/MainLayout.module.css';
-import NavBar from '@/components/NavBar';
+import { NavBar } from '@/components/NavBar';
 
 interface IMainLayout {
   children: React.ReactNode;
 }
 
-export default function MainLayout({ children }: IMainLayout) {
+export const MainLayout = ({ children }: IMainLayout) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -22,4 +22,4 @@ export default function MainLayout({ children }: IMainLayout) {
       <main className={styles.main}>{children}</main>
     </div>
   );
-}
+};

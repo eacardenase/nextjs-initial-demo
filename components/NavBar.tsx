@@ -1,7 +1,7 @@
 import styles from '@/components/NavBar.module.css';
 import { ActiveLink } from '@/components/ActiveLink';
 
-export default function NavBar() {
+export const NavBar = () => {
   return (
     <nav className={styles['menu-container']}>
       <ActiveLink text="Home" href="/" />
@@ -9,4 +9,4 @@ export default function NavBar() {
       <ActiveLink text="Contact" href="/contact" />
     </nav>
   );
-}
+};

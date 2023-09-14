@@ -12,7 +12,7 @@ const style = {
   textDecoration: 'underline',
 };
 
-export function ActiveLink({ text, href }: IActiveLink) {
+export const ActiveLink = ({ text, href }: IActiveLink) => {
   const { asPath } = useRouter();
 
   return (
@@ -20,4 +20,4 @@ export function ActiveLink({ text, href }: IActiveLink) {
       <a style={asPath === href ? style : undefined}>{text}</a>
     </Link>
   );
-}
+};
