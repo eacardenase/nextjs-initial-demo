@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { NextPage } from 'next';
 
 import { MainLayout } from '@/components/layouts/MainLayout';
 
-export const HomePage = () => {
+export const HomePage: NextPage = () => {
   return (
     <MainLayout>
       <h1>Home Page</h1>

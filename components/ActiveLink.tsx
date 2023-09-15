@@ -1,13 +1,16 @@
-import { useRouter } from 'next/router';
+import { CSSProperties } from 'react';
 
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-interface IActiveLink {
+import { Props } from './layouts/DarkLayout';
+
+interface IActiveLink extends Props {
   text: string;
   href: string;
 }
 
-const style = {
+const style: CSSProperties = {
   color: '#0070f3',
   textDecoration: 'underline',
 };

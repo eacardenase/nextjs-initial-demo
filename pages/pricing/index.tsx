@@ -10,7 +10,8 @@ export const PricingPage = () => {
         Ir a <Link href="/">Home</Link>
       </h1>
       <p className="description">
-        Get started by editing <code className="code">pages/pricing.tsx</code>
+        Get started by editing{' '}
+        <code className="code">pages/pricing/index.tsx</code>
       </p>
     </MainLayout>
   );

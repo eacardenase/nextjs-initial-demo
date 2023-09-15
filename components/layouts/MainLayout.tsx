@@ -2,12 +2,9 @@ import Head from 'next/head';
 
 import styles from '@/components/layouts/MainLayout.module.css';
 import { NavBar } from '@/components/NavBar';
+import { Props } from './DarkLayout';
 
-interface IMainLayout {
-  children: React.ReactNode;
-}
-
-export const MainLayout = ({ children }: IMainLayout) => {
+export const MainLayout = ({ children }: Props) => {
   return (
     <div className={styles.container}>
       <Head>

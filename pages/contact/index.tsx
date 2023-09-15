@@ -10,7 +10,8 @@ export const ContactPage = () => {
         Ir a <Link href="/">Home</Link>
       </h1>
       <p className="description">
-        Get started by editing <code className="code">pages/contact.tsx</code>
+        Get started by editing{' '}
+        <code className="code">pages/contact/index.tsx</code>
       </p>
     </MainLayout>
   );
